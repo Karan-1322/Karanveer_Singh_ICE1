@@ -63,16 +63,16 @@ public class CardTrick {
         return false;
     }
     Card luckyCard = new Card(8,2);
-        boolean find = false;
-        for (Card card : magicHand) 
+    boolean find = false;
+    for (Card card : magicHand) 
+    {
+        if (card.getValue() == luckyCard.getValue() && card.getSuit().equals(luckyCard.getSuit()))
         {
-            if (card.getValue() == luckyCard.getValue() && card.getSuit().equals(luckyCard.getSuit()))
-            {
-                find = true;
-                break;
+            find = true;
+            break;
             
-            }
         }
+    }
     if (find)
     {
         System.out.println("Congratulations! Your lucky card is in the magic hand.");
@@ -80,5 +80,17 @@ public class CardTrick {
     else 
     {
         System.out.println("Sorry! Your lucky card is not in the magic hand.");
+    }
+
+    private static class magicHand {
+
+        public magicHand() {
+        }
+    }
+
+    private static class find {
+
+        public find() {
+        }
     }
 }
