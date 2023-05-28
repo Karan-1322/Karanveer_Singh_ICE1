@@ -57,6 +57,7 @@ public class CardTrick {
         for (Card c : magicHand) {
             if (c.getValue() == card.getValue() && c.getSuit().equals(card.getSuit())) {
                 return true;
+           
             }
         }
         return false;
