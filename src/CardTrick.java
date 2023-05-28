@@ -69,6 +69,7 @@ public class CardTrick {
             {
                 find = true;
                 break;
+            
             }
         }
     if (find)
